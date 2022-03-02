@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Outfit', sans-serif;
+    background: #0d192b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /* border: solid 2px white; */
+
+}
+main {
+    max-width: 350px;
+    margin: 0 auto;
+    /* border: solid 25px #2c189b; */
+}
+section {
+    margin: 2rem 1rem;
+    padding: 20px;
+    background-color: #14253d;
+    border-radius: 15px;
+    box-shadow: 0 0 30px 5px #000000bf;
+    /* border: solid 2px #0bd34e; */
+
+}
+.img-top{
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+    /* border: solid 2px white; */
+
+}
+.img-top img{
+    width: 100%;
+    display: block;
+    /* border: solid 2px white; */
+}
+.img-overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #00fff780;
+    display: none;
+    /* border: solid 2px white; */
+}
+.img-overlay img{
+    position: absolute;
+    width: 50px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    /* border: solid 2px white; */
+
+}
+.img-top:hover .img-overlay{
+    display: block;
+}
+.box-text a{
+    color: #FFF;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 21px;
+    padding: 20px 0;
+    display: inline-block;
+    /* border: solid 2px white; */
+}
+.box-text a:hover{
+    color: #00fff7;
+}
+p{
+    color: #8bacda;
+}
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 0;
+ /* border: solid 2px #411414; */
+} 
+.eth,.dias {
+    display: flex;
+    align-items: center;
+}
+.eth p{
+    color: #00fff7;
+    font-weight: 600;
+    padding-left: 7px;
+}
+.dias p{
+    padding-left: 7px;
+}
+hr{
+    border-color: #2f415b;
+    border: solid 1px #ffffff;
+}
+.autor{
+    display: flex;
+    align-items: center;
+    padding-top: 5px;
+}
+.autor img{
+    height: 50px;
+    width: 50px;
+    border-radius: 49%;
+    border: 2px solid #FFF;
+    margin-right: 15px;
+}
+.autor p a.name{
+    color: #FFF;
+    font-size: 16px;
+}
+.autor p a.name:hover{
+    color: #00fff7;
+}

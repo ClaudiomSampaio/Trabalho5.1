@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;font-family: 'Red Hat Display', sans-serif;
+}
+
+html {
+    background: #e0e8ff;
+}
+
+body {
+    background-image: url(../img/pattern-background.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    background-color: #ffffff;
+    max-width: 416px;
+    border-radius: 10px;
+    box-shadow: 0 40px 40px -20px #0d30bd27;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 2rem;
+    height: 100%;
+    width: 100%;
+}
+
+main h1 {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    color: #1f2e55;
+}
+
+main span {
+    text-align: center;
+    color: #717fa6;
+}
+
+main strong {
+    color: #1f2e55;
+}
+
+main img {
+    border-radius: 1rem 1rem 0 0 ;
+    width: 100%;
+}
+
+main .informacao {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 2rem 0;
+    background-color: #f7f9ff;
+    padding: 1.5rem 1rem;
+    width: 100%;
+    border-radius: 0.8rem;
+}
+
+maim .informacao .preco-anual {
+    display: flex;
+    align-items: center;
+}
+
+main .informacao .preco {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+}
+
+main .informacao a:hover {
+    color: #766cf1;
+    text-decoration:none ;
+}
+
+main .informacao img {
+    width: 3rem;
+    height: 3rem;
+}
+
+main button {
+    cursor: pointer;
+    padding: 1rem 0;
+    width: 100%;
+    background-color: #382ae1;
+    box-shadow: 0 20px 20px #382ae130;
+    border-radius: 0.8rem;
+    border: none;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 95%;
+    margin-bottom: 1.5rem;
+    transition: background 0.3s;
+}
+
+ main button:hover {
+     background-color: #766cf1;
+ }
+
+ .cancelar-btn {
+     text-decoration: none;
+     color: #717fa6;
+     font-weight: 600;
+     font-size: 1rem;
+     margin-bottom: 2rem;
+     transition: color 0.3s;
+ }
+
+ .cancelar-btn:hover {
+     color: #1f2e55;
+ }
+ @media screen and (max-width: 650px) {
+    body {
+      background: url('../img/pattern-background.svg');
+      background-size: 100%;
+      background-repeat: no-repeat;
+    }
+  }
+  
+  @media screen and (max-width: 980px) {
+    section {
+      padding: 0 3rem;
+    }
+  }
